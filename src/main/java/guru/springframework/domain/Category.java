@@ -14,6 +14,7 @@ public class Category {
     private Long id;
     private String description;
 
+    // confirm relationships with http://localhost:8080/h2-console/
     @ManyToMany(mappedBy = "categories")
     private Set<Recipe> recipes;
 
